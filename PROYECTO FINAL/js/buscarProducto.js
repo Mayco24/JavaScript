@@ -2,9 +2,12 @@
 const inputBusqueda = document.querySelector('#searchInput');
 const btnBuscar = document.querySelector('#btnBusqueda');
 
-input.addEventListener('keyup', e => {
-    console.log(input.value);
-    const newUsers = MProductos.filter(producto => `${producto.nombre.toLowerCase()} ${producto.tipo.toLowerCase()}`.includes(input.value.toLowerCase()));
-    mostrarProductos(newUsers);
-});
+const busqueda = () => {
+    let buscar =  inputBusqueda.value
+    buscar = buscar.toUpperCase();
+    const buscarProducto = MProductos.filter(elemento => elemento.id == buscar || elemento.nombre.toUpperCase().includes(buscar)|| elemento.tipo.toUpperCase().includes(buscar));
+    console.log(buscarProducto);
+    mostrarProductos( buscarProducto );
+};
 
+btnBuscar.addEventListener("click",busqueda);
