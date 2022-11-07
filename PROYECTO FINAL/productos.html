@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono-->
+    <link rel="shortcut icon" href="Imagenes/Logo.ico" />
+    <!--Descripcion-->
+    <meta name="descripcion"
+        content="Tienda de Celulares NFC Celulares. Encuentra los mejores celulares, tablet y relojes los ultimos modelos y los mejores precios para vos.">
+    <!--Keywords-->
+    <meta name="keywords" content="Nfc Celulares, Celulares, Tablet, Relojes, Smartphones,
+         Smartwatch, Tienda de Celulares, Samsung, Motorola, LG, Amazon, Xiaomi, Apple">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!--link al CDM de animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Productos - NFC CELULARES</title>
+</head>
+
+<body>
+    <a name="arriba"></a>
+    <div class="contenedor">
+        <header class="contHeader">
+            <nav class="navbar navbar-expand-lg header__nav">
+                <div class="container-fluid">
+                    <div class="header__nav--logo_Inicio animate__animated animate__zoomIn">
+                        <a class="header__nav--logo_Inicio--a" href="index.html"><img class="header__nav--logo_Inicio--a--img" src="Imagenes/Logo de inicio.png"
+                                alt="Imagen Logo de la Pagina "></a>
+                    </div>
+                    <div>
+                        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="nav-menu-one navbar-collapse header__nav--menu" id="navbarNavDropdown">
+                        <ul class="navbar-nav header__nav--menu--ul">
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="ofertas.html">OFERTAS</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item header__nav--menu--ul--li">
+                                <a class="nav-link header__nav--menu--ul--li--a" href="quienessomos.html">QUIÉNES SOMOS</a>
+                            </li>
+                        </ul>
+                        <!--Buscador-->
+                        <div class="header__nav--botonesInicio">
+                            <form action="" class="header__nav--botonesInicio--form">
+                                <input class="header__nav--botonesInicio--form--input" id="searchInput" type="search" name="Buscador" placeholder="¿Que buscas?">
+                                <button class="header__nav--botonesInicio--form--button"><img src="./Imagenes/ico/search.png" alt="Icono Boton buscador" id="btnBusqueda"></button>
+                            </form>
+                        </div>
+                        <div class="header__nav--botonesLateral">
+                            <button type="button" class="btn btn-link position-relative header__nav--botonesLateral--button"><a href="carrito.html"><img
+                                    src="./Imagenes/ico/carrito-de-compras.png" alt="Icono Carrito de Compra"></a><span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-link">
+                                    <span class="visually-hidden">unread messages</span></span>
+                                    <div id="carrito">
+                                    
+                                        <table class="table">
+                                            <tbody id="listaCarrito">
+        
+                                            </tbody>
+                                          </table>
+                                          <div class="d-grid gap-2">
+                                            <a href="carrito.html" class="btn btn-secondary" id="verCarrito">Ver Carrito</a>
+                                          </div>
+                            
+                                    </div>
+                            </button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link header__nav--botonesLateral--button" data-bs-toggle="modal"
+                                data-bs-target="#myModal"><img src="./Imagenes/ico/cuenta_de_usuario.png"
+                                    alt="Icono Carrito de Compra">
+                            </button>
+                            <!-- Modal -->
+                            <div id="myModal" class="modal fade header__nav--botonesLateral--modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog header__nav--botonesLateral--modal-dialog">
+                                    <div class="modal-content header__nav--botonesLateral--modal-content">
+                                        <div class="modal-header header__nav--botonesLateral--modal-header">
+                                            <h3 class="modal-title">Iniciar Sesión</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body header__nav--botonesLateral--modal-body">
+                                            <a class="header__nav--botonesLateral--modal-body--a" href="index.html"><img class="header__nav--botonesLateral--modal-body--a--img" src="Imagenes/Logo de inicio.png"
+                                                    alt="Imagen logo inicio"></a>
+                                            <form action="" class="header__nav--botonesLateral--modal-body--form">
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                        <span class="input-group-addon"></i></span>
+                                                        <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Usuario"
+                                                            placeholder="Usuario" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <div class="input-group header__nav--botonesLateral--modal-body--form--form-group--input-group">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" class="form-control header__nav--botonesLateral--modal-body--form--form-group--input-group--input" name="Contraseña"
+                                                            placeholder="Contraseña" required="required">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group header__nav--botonesLateral--modal-body--form--form-group">
+                                                    <button class="header__nav--botonesLateral--modal-body--form--form-group--button" type="submit"
+                                                        class="btn btn-secondary btn-block btn-lg">Iniciar
+                                                        Sesión</button>
+                                                </div>
+                                                <p class="hint-text header__nav--botonesLateral--modal-body--form--p"><a href="#" class="header__nav--botonesLateral--modal-body--form--p--a">¿Olvidaste tu contraseña?</a></p>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer header__nav--botonesLateral--modal-footer">
+                                            <h4 class="header__nav--botonesLateral--modal-footer--h4">¿No tienes una cuenta?</h4><a class="header__nav--botonesLateral--modal-footer--a" href="#">Creé una Aquí</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="contMain">
+            <section>
+                <h3 class="productosMarcas-Titulo">Las Mejores Marcas</h3>
+                <div class="productosMarcas">
+                    <div><img src="Imagenes/ico/logo_samsung.png" alt="Imagen logo Samsung"></div>
+                    <div><img src="Imagenes/ico/logo_xiaomi.png" alt="Imagen logo Xiaomi"></div>
+                    <div><img src="Imagenes/ico/logo_LG.png" alt="Imagen logo LG"></a></div>
+                    <div><img src="Imagenes/ico/logo_motorola.png" alt="Imagen logo Motorola"></div>
+                    <div><img src="Imagenes/ico/logo_apple.png" alt="Imagen logo Apple"></a></div>
+                    <div><img src="Imagenes/ico/logo_amazon.png" alt="Imagen logo Amazon"></a></div>
+                </div>
+            </section>
+            <section>
+                    <!-- ORDENAR POR Y FILTRAR -->
+                    <div class="div-filtros">
+                        <form action="" class="ordenarYfiltrar">
+                            <div class="ordenarPor">
+                                <select class="form-select" aria-label="Default select example" id="ordenPor">
+                                    <option selected value="0">Ordenar</option>
+                                    <option value="1">A-Z</option>
+                                    <option value="2">Menor a mayor</option>
+                                    <option value="3">Mayor a menor</option>
+                                </select>
+                            </div>
+                            <div class="filtrar">
+                                <select class="form-select" aria-label="Default select example" id="filtroDeTipo">
+                                    <option selected>Filtrar</option>
+                                    <option id="filtrarCelular" value="CELULAR">Celulares</option>
+                                    <option id="filtrarTablet" value="TABLET">Tablets</option>
+                                    <option id="filtrarReloj" value="RELOJ">Relojes</option>
+                                </select>
+                            </div>
+                            <button class="cambios" id="aplicarCambios">Aplicar</button>
+                        </form>
+                    </div>
+            </section>
+            <section>
+                <!--No ha encontrado el producto en el buscador-->
+                <div class="divbuscadorProductos" id="divbuscadorProductos">
+                </div>
+
+                <div class="contenedor-tienda" id="insertDOMcontent">
+                    
+                </div>
+            </section>
+            <section>
+                <div class="seccionExtra">
+                    <div class="extra1">
+                        <img src="Imagenes/ico/entrega.png" alt="entrega">
+                        <h4>Envíos gratis a todo el país</h4>
+                    </div>
+                    <div class="extra2">
+                        <img src="Imagenes/ico/caja-de-devolucion.png" alt="devolucion">
+                        <h4>30 Dias para devolver tu compra</h4>
+                    </div>
+                    <div class="extra3">
+                        <img src="Imagenes/ico/tarjeta-de-credito.png" alt="tarjeta-de-credito">
+                        <h4>Todas las tarjetas debitos o credito</h4>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="seccionChat">
+                    <div class="btn-group" role="group">
+                        <ul>
+                            <button id="btnGroupDrop1" type="button" class="btn btn-transparent dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href=""><img src="./Imagenes/Chat/mensaje.ico" alt="Imagen Mensaje"></a>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="https://web.whatsapp.com/" target="_blank"><img
+                                            src="./Imagenes/Chat/whatsapp.png" alt="Imagen Whatsapp"></a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://www.messenger.com/" target="_blank"><img
+                                            src="./Imagenes/Chat/messenger.png" alt=" Imagen Mensseger"></a>
+                                </li>
+                                <li><a class="dropdown-item" href="https://web.telegram.org/" target="_blank"><img
+                                            src="./Imagenes/Chat/telegram.png" alt="Imagen Telegram"></a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="seccionArriba">
+                    <a href="#arriba"><img src="./Imagenes/ico/arriba.png" alt="Imagen Arriba"></a>
+                </div>
+            </section>
+        </main>
+        <footer class="contFooter">
+            <div class="footer__piepagina">
+                <!--Suscribete -->
+                <div class="footer__piepagina--ftrSuscribete">
+                    <h2 class="footer__piepagina--ftrSuscribete--h2">Suscripción a newsletter</h2>
+                    <form action="" class="footer__piepagina--ftrSuscribete--form">
+                        <p class="footer__piepagina--ftrSuscribete--form--p">Para mantenerte al tanto de nuevos <br>
+                            productos, ofertas y novedades, <br> ingresá tus
+                            datos a
+                            continuación.</p>
+                        <input class="footer__piepagina--ftrSuscribete--form--input" type="text" name="nombre"
+                            placeholder="Nombre">
+                        <input class="footer__piepagina--ftrSuscribete--form--input" type="email" name="email"
+                            placeholder="Email">
+                        <button class="footer__piepagina--ftrSuscribete--form--button">Enviar</button>
+                    </form>
+                </div>
+                <!--Mas Informacion-->
+                <div class="footer__piepagina--ftrInformacion">
+                    <h2 class="footer__piepagina--ftrInformacion--h2">Información</h2>
+                    <ul class="footer__piepagina--ftrInformacion--ul">
+                        <li class="footer__piepagina--ftrInformacion--ul--li">
+                            <!-- Button trigger modal -->
+                            <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Envíos</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                    <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
+                                        <div class="modal-header">
+                                            <img src="Imagenes/ico/entrega.png" alt="Imagen de envios">
+                                            <h3 class="modal-title" id="staticBackdropLabel">Envíos</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">Cada vez que realices una compra a
+                                                través de
+                                                <strong>nfccelularesarg</strong> podrás
+                                                elegir la modalidad de entrega que te resulte más cómoda y
+                                                fácil.<br><br>
+                                                Contás con la opción de Entrega a domicilio o Entrega en
+                                                sucursal. Más abajo te detallamos las particularidades de cada
+                                                uno.<br><br>
+                                                Tené en cuenta que si elegís entrega a domicilio las visitas se
+                                                realizan los días hábiles en el horario de 09hs. a 18hs. y la
+                                                compra puede ser recibida por cualquier persona mayor de 18
+                                                años. El correo realiza dos visitas a domicilio y de acuerdo a
+                                                la empresa responsable de la entrega, se puede realizar una
+                                                tercera visita o dejar el pedido en una sucursal.
+
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Envío estándar</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
+                                                Si elegís esta opción de envío la entrega se realizará al
+                                                domicilio que indiques en tu compra.
+                                            </p>
+
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Envío Prioritario</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
+                                                Si elegís esta opción de envío tenés la posibilidad con mas rapidez
+                                                tu envio con un periodo de entrega de 1 a 3 dias habiles segun el
+                                                origen y destino.
+                                            </p>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
+                                                <strong>Importante: </strong> Si tu compra se encuentra pendiente de
+                                                validación, el plazo de envío comienza a regir una vez que el pedido
+                                                haya sido aprobado.
+                                            </p>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer__piepagina--ftrInformacion--ul--li">
+                            <!-- Button trigger modal -->
+                            <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop1">Devoluciones</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop1" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                    <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
+                                        <div class="modal-header">
+                                            <img src="Imagenes/ico/caja-de-devolucion.png"
+                                                alt="Imagen devoluciones">
+                                            <h3 class="modal-title" id="staticBackdropLabel">Devoluciones</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
+                                                Para realizar el cambio contás con 30 días corridos a partir de la
+                                                recepción de tu pedido; esta gestión podés solicitarla desde tu
+                                                cuenta de NFC Celulares.</p>
+
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">¿Cuándo entrego / retiran mi pedido?</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
+                                                Si solicitaste la opción de Retiro en domicilio, en el plazo de
+                                                hasta siete días hábiles, nuestro proveedor logístico pasará por el
+                                                domicilio indicado a retirar el /los productos, para entregarlos en
+                                                nuestro centro de distribución.
+
+                                                Si solicitaste la opción de Entrega en sucursal, contás con un plazo
+                                                de diez días hábiles para entregar el/los productos en el punto de
+                                                entrega o sucursal elegida. En caso de no hacerlo en este plazo, la
+                                                solicitud será anulada, y deberás realizar nuevamente el cambio a
+                                                través de la página de <strong>nfccelularesarg</strong>. Recordá que
+                                                para entregar el producto, es necesario que pegues la etiqueta que
+                                                te enviamos por mail. <br><br>
+                                                Una vez que el / los productos lleguen a nuestro centro de
+                                                distribución, se realiza un control de calidad para verificar el
+                                                estado del mismo. Esta gestión puede demorar hasta 48hs. hábiles. En
+                                                caso que el control se apruebe correctamente, se hará efectiva la
+                                                opción de cambio elegida. <br><br>
+                                                Si el/los productos recibidos están usados, sucios, maltratados, o
+                                                no son recibidos con las instrucciones de preparación indicadas, el
+                                                cambio procederá a anularse y el producto será reenviado al
+                                                domicilio indicado en la orden de compra.
+                                            </p>
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">¿Cómo es el procedimiento de reintegro de dinero?</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">La devolución de dinero se realizará al
+                                                medio de pago utilizado en la
+                                                compra.
+
+                                                Si el pago de la compra lo realizaste a través de Rapipago o Pago
+                                                Fácil, acreditaremos el importe correspondiente a
+                                                través de una transferencia bancaria en un plazo máximo de diez días
+                                                hábiles. Tené en cuenta que para que concretemos la gestión, es
+                                                necesario que ingreses los datos de CBU en tu cuenta de <strong>nfccelularesarg</strong>, en
+                                                la opción Mi Cuenta.
+
+                                                Si abonaste con tarjeta de crédito, el reintegro del dinero será
+                                                realizado en el transcurso de siete días hábiles. El contracargo
+                                                podrás visualizarlo en el primer o segundo resumen de crédito,
+                                                posterior a la compra y como un saldo en negativo.
+
+                                                En caso que hayas abonado con cupón de crédito, la devolución se
+                                                realizará mediante la creación de un nuevo cupón cuya vigencia será
+                                                de 180 días.</p>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p"><strong>En caso que haya tenido algun incoveniente comunicate con
+                                                    nosotros </strong><br>
+                                                <strong>Mail: </strong>ventasmartphoneonline@gmail.com <br>
+                                                <strong>Teléfono: </strong>(+54) 351 687562011
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer__piepagina--ftrInformacion--ul--li">
+                            <!-- Button trigger modal -->
+                            <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop2">Formas de pago</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop2" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                    <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
+                                        <div class="modal-header">
+                                            <img src="Imagenes/ico/tarjeta-de-credito.png"
+                                                alt="Imagen de tarjetas forma de pago">
+                                            <h3 class="modal-title" id="staticBackdropLabel">Formas de Pago</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">TARJETAS DE DÉBITO</h4>
+                                            <div class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--imgTarjetasDebito">
+                                                <img src="Imagenes/ico/logo_visa.png" alt="Imagen logo Visa">
+                                                <img src="Imagenes/ico/logo_mastercard.png"
+                                                    alt="Imagen logo Mastercard">
+                                                <img src="Imagenes/ico/logo_americanexpress.png"
+                                                    alt="Imagen logo American">
+                                                <img src="Imagenes/ico/logo_cabal.png" alt="Imagen logo Cabal">
+                                                <img src="Imagenes/ico/logo_cordobesa.ico"
+                                                    alt="Imagen logo Cordobesa">
+                                            </div>
+                                            <p class=".footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p"><strong> 3 Cuotas sin Interés todos los
+                                                    dias en todos los productos con tarjeta de débito. <br>
+                                                    6 Cuotas sin Interés todos los dias en todos los productos con
+                                                    tarjeta de débito. <br>
+                                                    12 Cuotas fijas todos los dias en todos los productos con
+                                                    tarjeta de débito. <br>
+                                                    18 Cuotas sin Interés todos los dias en todos los productos con
+                                                    tarjeta de débito.
+                                                </strong></p>
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">TARJETAS DE CRÉDITO</h4>
+                                            <div class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito">
+                                                <div>
+                                                    <img src="Imagenes/ico/logo_visa.png" alt="Imagen logo Visa">
+                                                    <img src="Imagenes/ico/logo_mastercard.png"
+                                                        alt="Imagen logo Mastercard">
+                                                    <img src="Imagenes/ico/logo_americanexpress.png"
+                                                        alt="Imagen logo American">
+                                                    <img src="Imagenes/ico/logo_cabal.png" alt="Imagen logo Cabal">
+                                                    <img src="Imagenes/ico/logo_tarjetaNaranja.png"
+                                                        alt="Imagen logo Tarjeta Naranja">
+                                                </div>
+                                                <div>
+                                                    <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--pagoTarjetaCredito--p"><strong>3 | 6 | 12 y 18 Cuotas Cero Interés</strong></p>
+                                                </div>
+                                            </div>
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">OTROS MEDIOS DE PAGO</h4>
+                                            <div>
+                                                <img src="Imagenes/ico/logo_pagofacil.png"
+                                                    alt="Imagen logo Pago Facil">
+                                                <img src="Imagenes/ico/logo_rapipago.png"
+                                                    alt="Imagen logo Rapipago">
+                                                <img src="Imagenes/ico/Logo_mercadopago.png"
+                                                    alt="Imagen logo Mercado Pago">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer__piepagina--ftrInformacion--ul--li">
+                            <!-- Button trigger modal -->
+                            <a class="footer__piepagina--ftrInformacion--ul--li--a" href="" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop3">Terminos y
+                                Condiciones</a>
+
+                            <!-- Modal -->
+                            <div class="modal fade footer__piepagina--ftrInformacion--ul--li--modal" id="staticBackdrop3" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog">
+                                    <div class="modal-content footer__piepagina--ftrInformacion--ul--li--modal--modal-dialog--modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="staticBackdropLabel">Terminos y Condiciones
+                                            </h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body">
+                                            <h4 class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--h4">Terminos y Condiciones</h4>
+                                            <p class="footer__piepagina--ftrInformacion--ul--li--modal--modal-content--modal_body--p">
+                                                Bienvenido al sitio de internet
+                                                <strong>www.nfccelularesarg.com.ar</strong>. Los
+                                                términos y condiciones, que se describen a continuación (en adelante
+                                                los "Términos y Condiciones") tienen por objeto regular el uso que
+                                                realicen las personas que ingresen al Sitio. Por "Usuario" del
+                                                website se entiende tanto a los registrados como a los visitantes,
+                                                (en adelante el "Usuario"). Al registrarse y/o navegar en el Sitio,
+                                                el Usuario presta su consentimiento al presente.
+                                                <br>
+                                                Los Términos y Condiciones, así como las Políticas de Privacidad y/o
+                                                informaciones sobre el Sitio se considerarán de aplicación para todo
+                                                Usuario del Sitio desde el primer momento en que accedan al mismo.
+                                                Los presentes Términos y Condiciones tienen carácter obligatorio y
+                                                vinculante. Se aplican a todas las compras y actividades realizadas
+                                                en el Sitio. Si el Usuario no acepta en forma total los presentes
+                                                Términos y Condiciones, y las Políticas de Privacidad, le rogamos
+                                                que no avance en el acceso y visita de nuestro Sitio. En caso de
+                                                avanzar en la visita a nuestro Sitio, se entenderá que el Usuario
+                                                aceptó los presentes Términos y Condiciones, la Política de
+                                                Privacidad y acepta recibir mails periódicos con la información que
+                                                el Sitio determine. En caso de no querer recibir más correos
+                                                electrónicos podrá manifestarlo expresamente a través del envío de
+                                                un correo electrónico a ventasmartphoneonline@gmail.com. Los
+                                                Términos y
+                                                Condiciones y la Política de Privacidad podrán ser modificados en
+                                                todo o en parte en cualquier momento y a exclusivo criterio del
+                                                autor de NFC Celulares, dichos cambios e implementaciones tendrán
+                                                vigencia a partir del momento mismo en que sean publicados o
+                                                insertados en el Sitio o
+                                                desde que sean notificados al Usuario por cualquier medio, lo que
+                                                ocurra primero. Por lo expuesto, le sugerimos que los visite
+                                                periódicamente. Las violaciones a los Términos y Condiciones
+                                                generarán el derecho en favor del titular del Sitio a suspender o
+                                                terminar la prestación del servicio al Usuario que las haya
+                                                realizado, por acción u omisión. El Sitio se preocupa por la
+                                                protección de datos de carácter personal de los Usuarios, de acuerdo
+                                                a los lineamientos expuestos en nuestra Política de Privacidad.
+                                                <br>
+                                                Los productos y servicios que se ofrecen por medio del Sitio (en
+                                                adelante los "Productos"), sólo pueden ser adquiridos por personas
+                                                que tengan capacidad legal para contratar. Por lo tanto, aquellos
+                                                que no cumplan con esta condición deberán abstenerse de suministrar
+                                                información personal para ser incluida en nuestras bases de datos.
+                                                Los padres, tutores o responsables de los menores de edad o
+                                                incapaces que utilicen el Sitio serán responsables por dicho uso,
+                                                incluyendo cualquier cargo, facturación o daño que se derive de él.
+                                                Si el Usuario está registrado como Empresa, deberá tener capacidad
+                                                para contratar a nombre de tal entidad y de obligar a la misma en
+                                                los términos del presente.
+                                                <br><br>
+                                                <strong>Responsabilidad</strong>
+                                                <br><br>
+                                                Para la adquisición de Productos es obligatorio completar el
+                                                formulario de registración en todos sus campos con datos válidos,
+                                                precisos y verdaderos ("Datos Personales"). El Usuario dispondrá,
+                                                una vez registrado, de un nombre y contraseña que le permitirá el
+                                                acceso personalizado, confidencial y seguro para utilizar los
+                                                servicios del Sitio. La clave será escogida por el propio Usuario y
+                                                puede ser modificada por el propio Usuario. El Usuario es
+                                                responsable de toda afirmación y/o expresión y/o acto celebrado con
+                                                su nombre de usuario y contraseña. El Sitio se reserva el derecho,
+                                                en cualquier momento y sin necesidad de darle notificación previa,
+                                                de retirar cualquier envío o dar por concluido su calidad de miembro
+                                                del Sitio por violación de los Términos y Condiciones aquí
+                                                descriptos. En caso de que la información o los Datos suministrados
+                                                por el Usuario no sean verdaderos, este será responsable por los
+                                                daños que este hecho pudiera ocasionar.
+                                                <br>
+                                                El Usuario acepta y reconoce que el sistema puede no siempre estar
+                                                disponible debido a dificultades técnicas o fallas de Internet, o
+                                                por cualquier otro motivo ajeno al Sitio, motivo por el cual no
+                                                podrá imputársele responsabilidad alguna. El contenido del Sitio,
+                                                junto con y sin que se considere una limitación, sus logotipos,
+                                                programas, bases de datos, imágenes, textos información y archivos
+                                                son de propiedad de NFC Celulares. Su uso indebido así como su
+                                                reproducción
+                                                sin el expreso y escrito consentimiento previo de NFC Celulares
+                                                serán objeto
+                                                de las acciones judiciales que correspondan. El presente acuerdo no
+                                                podrá ser interpretado como un contrato de sociedad, mandato o que
+                                                genere ningún tipo de relación entre el Sitio y el Usuario. El uso
+                                                de Internet y el Sitio implica la asunción de riesgos de daños al
+                                                software y al hardware del Usuario. Documentos y archivos pueden
+                                                contener virus y, como es el caso de cualquier computadora
+                                                interconectada, la computadora del Usuario puede ser atacada por
+                                                hackers que podrían tener acceso a la información contenida en la
+                                                computadora del Usuario, extraerla o dañarla. El envío de
+                                                información a través de la red o a través de e-mails tiene el riesgo
+                                                de que tal información pueda ser captada por un tercero. El Sitio no
+                                                se hace responsable de las consecuencias que pudiera acarrear al
+                                                Usuario la asunción por parte del Usuario de ese riesgo. El Sitio no
+                                                tiene obligación alguna de conservar ninguna información que haya
+                                                hecho disponible a los Usuarios ni que le haya sido enviada por los
+                                                Usuarios. Las funciones contenidas en el Sitio y el acceso al mismo
+                                                pueden ser interrumpidas en cualquier momento y contener errores.
+                                                <br>
+                                                Excepto en aquellos casos en que la responsabilidad de NFC Celulares
+                                                pueda
+                                                estar limitada por medio de una Política Especifica, en todo otro
+                                                caso de existir responsabilidad de NFC o de los Proveedores de
+                                                productos e información de productos, ya sea en forma individual o
+                                                conjunta, por cualquier tipo de daños vinculados al Producto, el
+                                                monto de la misma no excederá en su totalidad la retribución pagada
+                                                por el Usuario por el uso del Producto en cuestión o del Producto
+                                                provisto, según sea el caso.
+                                                <br>
+                                                La información personal será procesada y almacenada en servidores de
+                                                NFC. Para mayor información sobre la privacidad de los Datos
+                                                Personales y casos en los que será revelada la información personal,
+                                                se pueden consultar nuestras Políticas de Privacidad.
+                                                <br>
+                                                No se permitirá ninguna acción o uso de dispositivo, software, u
+                                                otro medio tendiente a interferir tanto en las actividades y
+                                                operatoria de NFC como en las ofertas, descripciones, cuentas o
+                                                bases de datos de NFC. Cualquier intromisión, tentativa o
+                                                actividad violatoria o contraria a las leyes sobre derecho de
+                                                propiedad intelectual y/o a las prohibiciones estipuladas en el
+                                                presente harán pasible a su responsable de las acciones legales
+                                                pertinentes, y a las sanciones previstas por este acuerdo, así como
+                                                lo hará responsable de indemnizar los daños ocasionados.
+                                                <br><br>
+                                                <strong>Oferta de Productos</strong>
+                                                <br><br>
+                                                La información sobre Productos ofrecidos y precios está sujeta a
+                                                cambios sin previo aviso. Todos los precios expresados en el Sitio
+                                                incluyen IVA, salvo que se indique lo contrario. Todos los precios
+                                                en el Sitio están expresados en pesos argentinos, moneda de curso
+                                                legal de la República Argentina. No se permite la modalidad de
+                                                cambio de producto por el mismo modelo y mismo talle salvo que el
+                                                cambio se deba a un defecto del Producto. La aceptación de la oferta
+                                                de un Producto por parte del Usuario quedará sujeta a la condición
+                                                suspensiva de que NFC valide la transacción, es decir que la
+                                                compra no quedará perfeccionada hasta que NFC confirme la
+                                                operación. Para confirmar la transacción NFC deberá verificar: i)
+                                                Que dispone de los Productos en stock en el momento de la aceptación
+                                                de la oferta; ii) Que los datos registrados por el Usuario coinciden
+                                                con los proporcionados al efectuar su aceptación de oferta. La
+                                                confirmación al Usuario será enviada a la dirección de correo
+                                                electrónico registrada por el Usuario, en cuyo caso la compra se
+                                                entenderá confirmada desde el momento en que se envía la
+                                                confirmación escrita al Usuario. Por ello, al momento de ingresar al
+                                                sistema la compra, el Usuario deberá tener en cuenta que los
+                                                Productos seleccionados pueden no encontrarse disponibles. Toda
+                                                aceptación de la oferta se encuentra sujeta a disponibilidad y
+                                                confirmación de la compra. El Sitio solamente opera vía internet.
+                                                Por este motivo, puede ocurrir que, por más que sea posible ordenar
+                                                la compra de un Producto en el Sitio, no haya existencias de éste,
+                                                por razones imputables a las firmas que proveen los productos al
+                                                Sitio. Del mismo modo, el precio de los Productos que ofrecemos en
+                                                el Sitio, puede no coincidir con el de los distintos locales o
+                                                proveedores que nos abastecen y/o que publican sus Productos. El
+                                                Usuario deberá pagar el precio de los Productos, y el precio de
+                                                envío, éste último en caso de corresponder conforme se expone en la
+                                                oferta del Sitio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Mas informacion-->
+                <div class="footer__piepagina--ftrSecciones">
+                    <h2 class="footer__piepagina--ftrSecciones--h2">Secciones</h2>
+                    <ul class="footer__piepagina--ftrSecciones--ul">
+                        <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="productos.html">Productos</a></li>
+                        <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="ofertas.html">Ofertas</a></li>
+                        <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="contacto.html">Contacto</a></li>
+                        <li class="footer__piepagina--ftrSecciones--ul--li"><a class="footer__piepagina--ftrSecciones--ul--li--a" href="quienessomos.html">Quiénes Somos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__piepagina--ftrLogo">
+                    <img class="footer__piepagina--ftrLogo--img" src="Imagenes/Logo de inicio.png" alt="Imagen Logo de la Pagina ">
+                    <p class="footer__piepagina--ftrLogo--p">Copyright NFCCelularesarg 2021 <br> Todos los derechos reservados.</p>
+                    <div class="footer__piepagina--ftrLogo--redes_sociales">
+                        <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://facebook.com" target="_blank">
+                            <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/facebook.svg"
+                                alt="Logo de Facebook">
+                            </a>
+                        <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://instagram.com" target="_blank">
+                            <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/instagram.svg"
+                                alt="Logo de Instragram">
+                            </a>
+                        <a class="footer__piepagina--ftrLogo--redes_sociales--a" href="https://twitter.com" target="_blank">
+                            <img class="footer__piepagina--ftrLogo--redes_sociales--a--img" src="Imagenes/ico/twitter.svg"
+                                alt="Logo de Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+
+        <script src="/js/JSON.js"></script>
+        <script src="/js/buscarProducto.js"></script>
+        <script src="/js/productos.js"></script>
+
+</body>
+
+</html>
